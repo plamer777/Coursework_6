@@ -1,0 +1,337 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-15 21:36+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: ads/models.py:13
+msgid "Enter a title here"
+msgstr "Введите название"
+
+#: ads/models.py:16
+msgid "Enter your price here"
+msgstr "Введите цену"
+
+#: ads/models.py:20
+msgid "Upload a photo for this ad"
+msgstr "Загрузите фото для вашего объявления"
+
+#: ads/models.py:26
+msgid "Write your description here"
+msgstr "Укажите описание"
+
+#: ads/models.py:31 ads/models.py:55
+msgid "This field stores the author id"
+msgstr "Это поле хранит id автора"
+
+#: ads/models.py:36
+msgid "The date this ad was created"
+msgstr "Дата, когда объявление было создано"
+
+#: ads/models.py:40
+msgid "Advertisement"
+msgstr "Объявление"
+
+#: ads/models.py:41
+msgid "Advertisements"
+msgstr "Объявления"
+
+#: ads/models.py:50
+msgid "Enter a comment here"
+msgstr "Введите ваш комментарий"
+
+#: ads/models.py:60
+msgid "This field stores the ad id"
+msgstr "Это поле хранит id объявления"
+
+#: ads/models.py:64
+msgid "The date this comment was created"
+msgstr "Дата создания комментария"
+
+#: ads/models.py:68
+msgid "Comment"
+msgstr "Отзыв"
+
+#: ads/models.py:69
+msgid "Comments"
+msgstr "Отзывы"
+
+#: ads/views.py:23
+msgid "Returns a list of advertisements sorted by creation date"
+msgstr "Возвращает список объявлений, отсортированных по дате добавления"
+
+#: ads/views.py:24
+msgid "A list of advertisements"
+msgstr "Список объявлений"
+
+#: ads/views.py:26
+msgid "Returns a detail advertisement"
+msgstr "Возвращает подробную информацию об объявлении"
+
+#: ads/views.py:27
+msgid "A detail advertisement"
+msgstr "Подробная информация об объявлении"
+
+#: ads/views.py:30
+msgid "Adds a new advertisement to the database"
+msgstr "Добавление нового объявления в базу"
+
+#: ads/views.py:31
+msgid "Add advertisement"
+msgstr "Добавить объявление"
+
+#: ads/views.py:34
+msgid "Updates all fields of the certain advertisement"
+msgstr "Обновить все поля объявления"
+
+#: ads/views.py:35
+msgid "Update advertisement"
+msgstr "Обновление всех полей объявления"
+
+#: ads/views.py:38
+msgid "Updates chosen fields of the certain advertisement"
+msgstr "Обновление выбранных полей объявления"
+
+#: ads/views.py:39
+msgid "Partially update advertisement"
+msgstr "Частичное обновление объявления"
+
+#: ads/views.py:42
+msgid "Deletes the advertisement from the database"
+msgstr "Удаление объявления из базы данных"
+
+#: ads/views.py:43
+msgid "Delete advertisement"
+msgstr "Удалить объявление"
+
+#: ads/views.py:71
+msgid "Returns a list of user's advertisements"
+msgstr "Получение списка всех объявлений авторизованного пользователя"
+
+#: ads/views.py:72
+msgid "A list of user's advertisements"
+msgstr "Список всех пользовательских объявлений"
+
+#: ads/views.py:86
+msgid "Returns a list of all comments"
+msgstr "Получение списка всех комментариев по заданному объявлению"
+
+#: ads/views.py:87
+msgid "A list of comments"
+msgstr "Список комментариев"
+
+#: ads/views.py:89
+msgid "Returns a detail comment"
+msgstr "Получить детальную информацию об отзыве"
+
+#: ads/views.py:90
+msgid "A detail comment"
+msgstr "Детальный отзыв"
+
+#: ads/views.py:93
+msgid "Adds a new comment to the database"
+msgstr "Добавление нового отзыва"
+
+#: ads/views.py:94
+msgid "Add comment"
+msgstr "Добавить отзыв"
+
+#: ads/views.py:97
+msgid "Updates all fields of the certain comment"
+msgstr "Обновить все поля конкретного отзыва"
+
+#: ads/views.py:98
+msgid "Update comment"
+msgstr "Обновить отзыв"
+
+#: ads/views.py:101
+msgid "Updates chosen fields of the certain comment"
+msgstr "Обновить выбранные поля отзыва"
+
+#: ads/views.py:102
+msgid "Partially update comment"
+msgstr "Частичное обновление отзыва"
+
+#: ads/views.py:105
+msgid "Deletes the comment from the database"
+msgstr "Удаление комментария из базы"
+
+#: ads/views.py:106
+msgid "Delete comment"
+msgstr "Удалить комментарий"
+
+#: users/managers.py:15
+msgid "Email is required"
+msgstr "Необходимо указать email"
+
+#: users/models.py:17
+msgid "Admin"
+msgstr "Администратор"
+
+#: users/models.py:18 users/models.py:86
+msgid "User"
+msgstr "Пользователь"
+
+#: users/models.py:24
+msgid "This field is used to register and log-in"
+msgstr "Это поле используется для регистрации и входа в аккаунт"
+
+#: users/models.py:29
+msgid "First name of user"
+msgstr "Имя пользователя"
+
+#: users/models.py:33
+msgid "Last name of user"
+msgstr "Фамилия пользователя"
+
+#: users/models.py:38
+msgid "Your phone number"
+msgstr "Ваш номер телефона"
+
+#: users/models.py:44
+msgid "Role of user"
+msgstr "Роль пользователя"
+
+#: users/models.py:48
+msgid "Path to an avatar to upload"
+msgstr "Путь к файлу для загрузки аватарки пользователя"
+
+#: users/models.py:87
+msgid "Users"
+msgstr "Пользователи"
+
+#: users/views.py:12
+msgid "Returns a list of all users"
+msgstr "Данный маршрут возвращает список всех пользователей"
+
+#: users/views.py:13
+msgid "A list of users"
+msgstr "Список пользователей"
+
+#: users/views.py:15
+msgid "Returns a detail user"
+msgstr "Получение подробной информации о пользователе"
+
+#: users/views.py:16
+msgid "A detail user"
+msgstr "Детальное инфо пользователя"
+
+#: users/views.py:19
+msgid "Adds a new user to the database"
+msgstr "Добавление нового пользователя в базу данных"
+
+#: users/views.py:20
+msgid "Add user"
+msgstr "Добавить пользователя"
+
+#: users/views.py:23
+msgid "Updates all fields of the certain user"
+msgstr "Обновить все поля в модели пользователя"
+
+#: users/views.py:24
+msgid "Update user"
+msgstr "Обновить данные пользователя"
+
+#: users/views.py:27
+msgid "Updates chosen fields of the certain user"
+msgstr "Обновить выбранные поля модели пользователя"
+
+#: users/views.py:28
+msgid "Partially update user"
+msgstr "Частичное обновление пользователя"
+
+#: users/views.py:31
+msgid "Deletes the user from the database"
+msgstr "Удаление пользователя из базы данных"
+
+#: users/views.py:32
+msgid "Delete user"
+msgstr "Удалить пользователя"
+
+#: users/views.py:36
+msgid "Allows current user to get a detail info of his profile, change or delete it"
+msgstr "Данная ручка позволяет авторизованному пользователю получить информацию о себе, обновить ее или удалить"
+
+#: users/views.py:38
+msgid "Current user"
+msgstr "Текущий авторизованный пользователь"
+
+#: users/views.py:40
+msgid "Activates account of the user"
+msgstr "Данный маршрут служит для активации аккаунта пользователя"
+
+#: users/views.py:41
+msgid "Account activation"
+msgstr "Активация аккаунта"
+
+#: users/views.py:44
+msgid "Sends one more activation request to the user"
+msgstr "Получить повторный запрос на активацию аккаунта"
+
+#: users/views.py:45
+msgid "Resend activation request"
+msgstr "Повторно отправить запрос на активацию"
+
+#: users/views.py:48
+msgid "Sends a request to reset the password"
+msgstr "Отправить запрос на сброс пароля"
+
+#: users/views.py:49
+msgid "Reset password request"
+msgstr "Сброс пароля"
+
+#: users/views.py:52
+msgid "Confirmation of reset password request"
+msgstr "Получение подтверждения от пользователя о сбросе пароля"
+
+#: users/views.py:53
+msgid "Reset password confirmation"
+msgstr "Подтверждение сброса пароля"
+
+#: users/views.py:56
+msgid "Allows user to set a new password"
+msgstr "Маршрут позволяют пользователю сменить пароль"
+
+#: users/views.py:57
+msgid "Change password"
+msgstr "Смена пароля"
+
+#: users/views.py:60
+msgid "Allows user to set a new username"
+msgstr "Маршрут позволяют пользователю сменить имя пользователя"
+
+#: users/views.py:61
+msgid "Change username"
+msgstr "Сменить имя пользователя"
+
+#: users/views.py:64
+msgid "Allows user to get a request to reset his username"
+msgstr "Маршрут служит для отправки запроса на смену имени пользователя"
+
+#: users/views.py:65
+msgid "Reset username request"
+msgstr "Запрос на смену имени пользователя"
+
+#: users/views.py:68
+msgid "Confirmation of reset username request"
+msgstr "Маршрут служит для получения подтверждения от пользователя о смене имени пользователя"
+
+#: users/views.py:69
+msgid "Reset username confirmation"
+msgstr "Подтверждение на смену имени пользователя"

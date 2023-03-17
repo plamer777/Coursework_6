@@ -64,7 +64,7 @@ function App() {
         <Route exact path="/sign-in/email/" component={EmailLink} />
         <Route
           exact
-          path="/password/reset/confirm/:Ng/:id/"
+          path="/password/reset/confirm/:id/:Ng/"
           component={ChangePassword}
         />
         <PrivateRoute exact path="/profile/" component={UserProfile} />

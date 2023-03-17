@@ -10,8 +10,8 @@ function ChangePassword() {
   const { changePassword } = useContext(AuthContext);
   const match = useParams();
   const history = useHistory();
-  const uid = match.Ng;
-  const token = match.id;
+  const uid = match.id;
+  const token = match.Ng;
 
   function handleChangeInput(e) {
     handleChange(e);

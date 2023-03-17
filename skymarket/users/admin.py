@@ -1,6 +1,6 @@
+"""This file serves to register models to be available from admin panel"""
 from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin
-
 from users.models import User
-# TODO Aдмика для пользователя - как реализовать ее можно подсмотреть в документаци django
-# TODO Обычно её всегда оформляют, но в текущей задачи делать её не обязательно
+# -------------------------------------------------------------------------
+
+admin.site.register(User)
