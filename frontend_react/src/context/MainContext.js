@@ -16,7 +16,7 @@ export const MainContextStates = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const api = useAxios();
   let { authTokens } = useContext(AuthContext);
-  const BASE_URL = "http://127.0.0.1:8000/api";
+  const BASE_URL = "http://skyrent-server.ru:8000/api";
   const BASE_URL_OPEN = `${BASE_URL}/ads/?`;
   const BASE_URL_ADS = `/api/ads/?`;
 

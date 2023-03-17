@@ -177,7 +177,6 @@ USE_TZ = True
 
 STATIC_URL = "/django_static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "django_static")
-STATICFILES_DIRS = ('admin', 'rest_framework')
 
 MEDIA_URL = "/django_media/"
 MEDIA_DIR = os.path.join(BASE_DIR, "django_media")
