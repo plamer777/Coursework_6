@@ -13,13 +13,14 @@ import os
 from datetime import timedelta
 from pathlib import Path
 from dotenv import load_dotenv
+
 # ------------------------------------------------------------------------
 
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-LOCALE_PATHS = (os.path.join(BASE_DIR, 'locale/'), )
+LOCALE_PATHS = (os.path.join(BASE_DIR, 'locale/'),)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -31,7 +32,10 @@ SECRET_KEY = \
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-# ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['.skyrent-server.ru',
+                 '.localhost',
+                 '.127.0.0.1'
+                 ]
 
 # Application definition
 
@@ -64,7 +68,6 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-
 ROOT_URLCONF = "skymarket.urls"
 
 TEMPLATES = [
@@ -85,7 +88,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "skymarket.wsgi.application"
-
 
 REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
@@ -158,7 +160,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
@@ -171,7 +172,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
@@ -182,7 +182,11 @@ MEDIA_URL = "/django_media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "django_media")
 
 # CORS
-CORS_ALLOWED_ORIGINS = ['http://skyrent-server.ru:3000']
+CORS_ALLOWED_ORIGINS = ['http://skyrent-server.ru:3000',
+                        'http://skyrent-server.ru:8000',
+                        'http://localhost:3000',
+                        'http://localhost:8000',
+                        'http://127.0.0.1', ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
@@ -194,7 +198,6 @@ AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.RemoteUserBackend',
     'django.contrib.auth.backends.ModelBackend',
 )
-
 
 # Include Email Backend
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
