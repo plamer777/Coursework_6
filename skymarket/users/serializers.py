@@ -32,3 +32,7 @@ class CurrentUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         exclude = ('last_login', 'role', 'is_active', 'password')
+        
+    def to_internal_value(self, data):
+        data.pop('email', None)
+        return super().to_internal_value(data)
