@@ -34,6 +34,8 @@ services:
     depends_on:
       - db
       - migrate
+    volumes:
+      - ../skymarket/django_media/:/skymarket/django_media/
 
   migrate:
     build:
