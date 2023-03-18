@@ -25,10 +25,21 @@ class UserSerializer(BaseUserRegistrationSerializer):
         model = User
         exclude = ('last_login', 'role', 'is_active')
 
+    def update(self, instance, validated_data):
+        instance.set_password(validated_data.pop('password'))
+        instance.save()
+        return super().update(instance, validated_data)
+
 
 class CurrentUserSerializer(serializers.ModelSerializer):
     """This serializer serves to work with current user and to implement
      CRUD operations with current user"""
     class Meta:
         model = User
-        exclude = ('last_login', 'role', 'is_active', 'password')
+        exclude = ('last_login', 'role', 'is_active')
+
+    def update(self, instance, validated_data):
+        instance.set_password(validated_data.pop('password'))
+        instance.save()
+        return super().update(instance, validated_data)
+
