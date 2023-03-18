@@ -31,7 +31,7 @@ SECRET_KEY = \
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+# ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -179,13 +179,10 @@ STATIC_URL = "/django_static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "django_static")
 
 MEDIA_URL = "/django_media/"
-MEDIA_DIR = os.path.join(BASE_DIR, "django_media")
-MEDIA_ROOT = MEDIA_DIR
+MEDIA_ROOT = os.path.join(BASE_DIR, "django_media")
 
 # CORS
-CORS_ALLOW_ALL_ORIGINS = True
-SCRF_TRUSTED_ORIGINS = ["*"]
-
+CORS_ALLOWED_ORIGINS = ['http://skyrent-server.ru:3000']
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
