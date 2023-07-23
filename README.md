@@ -38,4 +38,6 @@ To start the app just follow the next steps:
  - The main page with swagger will be available by the url http://localhost:3000/ (if started locally) or 
 http://yourdomain:3000/ (if started on a VPS)
  - After that application is ready to work
- The project was created in 17 March 2023 by Aleksey Mavrin
+ 
+
+The project was created in 17 March 2023 by Aleksey Mavrin
