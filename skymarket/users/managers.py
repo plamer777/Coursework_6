@@ -23,17 +23,9 @@ class UserManager(BaseUserManager):
         """
         if not email:
             raise ValidationError(_('Email is required'))
-        user = self.model(email=email,
-                          first_name=first_name,
-                          last_name=last_name,
-                          phone=phone,
-                          role='user')
 
-        user.is_active = True
-        user.set_password(password)
-        user.save(using=self._db)
-
-        return user
+        return self._save_user_data(email, first_name, last_name, phone,
+                                    password, 'user')
 
     def create_superuser(self, email: str, first_name: str, last_name: str,
                          phone: str, password: str = '', **kwargs):
@@ -47,11 +39,24 @@ class UserManager(BaseUserManager):
         :param kwargs: Additional keyword arguments
         :return: User object
         """
-        return self.create_user(
-            email=email,
-            first_name=first_name,
-            last_name=last_name,
-            password=password,
-            phone=phone,
-            role='admin',
-            is_active=True)
+        if not email:
+            raise ValidationError(_('Email is required'))
+
+        return self._save_user_data(email, first_name, last_name, phone,
+                                    password, 'admin')
+
+    def _save_user_data(self, email: str, first_name: str, last_name: str,
+                         phone: str, password: str = '', role: str = 'user',
+                        **kwargs):
+
+        user = self.model(email=email,
+                          first_name=first_name,
+                          last_name=last_name,
+                          phone=phone,
+                          role=role)
+
+        user.is_active = True
+        user.set_password(password)
+        user.save(using=self._db)
+
+        return user

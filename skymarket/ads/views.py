@@ -130,11 +130,6 @@ class CommentViewSet(viewsets.ModelViewSet):
                        UpdateDeleteCommentPermission | AdminPermission]
                    }
 
-    def get_queryset(self):
-        """This method returns a comment's queryset for current Ad model"""
-        pk = self.kwargs.get('uid')
-        return Comment.objects.filter(ad_id=pk)
-
     def get_permissions(self):
         """This method returns a list of permissions for certain action"""
         return [permission() for permission in self.permissions.get(
